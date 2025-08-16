@@ -1,0 +1,165 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    height: 100%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1b4965;
+    background-color: #fff;
+    line-height: 1.6;
+  }
+  
+  /* Container geral */
+  .container {
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+/* Header */
+  header {
+    background-color: #1b4965;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+  }
+
+  .titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  margin-left: 2rem;
+}
+  
+  .logo {
+    font-size: 1.8rem;
+    color: #fff;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .menu li a:hover,
+  .menu li a:focus {
+    color: #5ab0f0;
+    background-color: rgba(90, 176, 240, 0.15);
+  }
+  
+  .menu li a.ativo {
+    color: #fff;
+    background-color: #1b4965;
+  }
+  
+  /* Espaço para header fixo */
+  body {
+    padding-top: 110px;
+    overflow-y: auto; /* scroll único na página */
+  }
+  
+  /* Seções full viewport */
+  .secao {
+    height: calc(100vh - 110px); /* altura da viewport menos header */
+    padding: 40px 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #f9fbff;
+    border-bottom: 1px solid #eee;
+  }
+  
+  /* Contato com altura reduzida */
+  footer .secao {
+    background-color: #d9efff;
+    height: 70vh;
+    padding: 40px 20px;
+    border-bottom: none;
+  }
+  
+  /* Conteúdo flexível */
+  .conteudo {
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .texto {
+    flex: 1 1 400px;
+    min-width: 300px;
+  }
+  
+  .imagem {
+    flex: 1 1 300px;
+    min-width: 280px;
+    text-align: center;
+  }
+  
+  .imagem img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Títulos */
+  .secao h2 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #1b4965;
+  }
+  
+  /* Listas */
+  .secao ul {
+    list-style: disc inside;
+    color: #396481;
+    font-size: 1.15rem;
+    margin-top: 10px;
+  }
+  
+  .secao ul li {
+    margin-bottom: 8px;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .conteudo {
+      flex-direction: column;
+    }
+    .imagem, .texto {
+      min-width: 100%;
+      text-align: center;
+    }
+    .texto {
+      margin-bottom: 20px;
+    }
+  }
+  
