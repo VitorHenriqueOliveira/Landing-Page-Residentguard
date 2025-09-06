@@ -14,24 +14,61 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+     function achar_proximo (elemento, lista, index) {
+      const tamanho = lista.length - 1;
 
   
-  const carousel = document.querySelector(".carousel");
-  if(carousel){
-    let isDown=false, startX, scrollLeft;
-    carousel.addEventListener('mousedown', e => {
-      isDown=true;
-      startX=e.pageX - carousel.offsetLeft;
-      scrollLeft=carousel.scrollLeft;
+      let index_futuro = index + 1;
+
+      if (tamanho == index) {
+        index_futuro = 0;
+      }
+
+      let index_passado = index - 1;
+
+      if (index_passado == - 1){
+        index_passado = tamanho;
+      }
+
+
+      lista[index_passado].classList.add('past');
+      lista[index_futuro].classList.add('future');
+
+     
+     }
+
+     function alterar_imagem(elemento, lista, index) {
+      let past = document .querySelector(".past");
+      let future = document .querySelector(".future");
+      
+      elemento.classList.add('hidden');
+      future.classList.remove("hidden", "future");
+      past.classList.remove("past");
+      index += 1;
+      achar_proximo(future, lista, index);
+     }
+
+     let index = 0;
+    document.addEventListener('click', function(event) 
+    {
+
+        let carousel = event.target.closest('.elemento-carousel');
+        console.log(index);
+        if (carousel) {
+          const list_carousel = document.querySelectorAll(".elemento-carousel");
+          if(list_carousel){
+              if (index == 0) {
+                achar_proximo(carousel, list_carousel, index);
+              }
+              alterar_imagem(carousel, list_carousel, index)
+              index += 1;
+
+           
+          
+            
+          }
+      }
+      
+  
     });
-    carousel.addEventListener('mouseleave', ()=>isDown=false);
-    carousel.addEventListener('mouseup', ()=>isDown=false);
-    carousel.addEventListener('mousemove', e=>{
-      if(!isDown) return;
-      e.preventDefault();
-      const x=e.pageX-carousel.offsetLeft;
-      const walk=(x-startX)*2;
-      carousel.scrollLeft=scrollLeft-walk;
-    });
-  }
 });

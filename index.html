@@ -5,23 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Landing Page ResidentGuard</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- Feather Icons (CDN) -->
+  <script defer src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 </head>
 <body>
  
   <header>
     <div class="container">
       <div class="titulo">
-        <img src="img/ResidentLogo.png" alt="ResidentGuard Logo" width="50" height="80" />
+        <img src="img/ResidentLogo.png" alt="ResidentGuard Logo" width="45" height="60" />
         <h1 class="logo">ResidentGuard</h1>
       </div>
       <nav class="menu-centro">
         <ul class="menu">
           <li><a href="#inicio">Início</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#historia">História</a></li>
-          <li><a href="#funcionamento">Funcionamento</a></li>
-          <li><a href="#seguranca">Segurança</a></li>
-          <li><a href="#telas">Telas</a></li>
+          <li><a href="#funcionalidades">Funcionalidades</a></li>
+          <li><a href="#beneficios">Benefícios</a></li>
           <li><a href="#sobre">Sobre Nós</a></li>
         </ul>
       </nav>
@@ -33,104 +32,145 @@
 
   <main>
 
-    <section id="inicio" class="secao">
-      <div class="conteudo lado-a-lado">
-        <img src="img/Login.png" alt="Imagem do Sistema" />
-        <div class="texto-lado">
-          <h2>Bem-vindo a ResidentGuard!</h2>
-          <p>O projeto tem como objetivo o desenvolvimento de uma plataforma online voltada para a portaria de condomínios residenciais. A proposta é oferecer uma solução prática e eficiente que melhore a gestão de entrada, saídas, entregas, visitantes e o uso das áreas comuns, contribuindo diretamente para a segurança, organização e conforto dos moradores.</p>
+  
+    <section id="inicio" class="secao inicio hero">
+      <div class="overlay">
+        <h2>ResidentGuard</h2>
+        <p>
+          O ResidentGuard nasceu da necessidade de modernizar a gestão de portarias em condomínios residenciais. 
+          A ideia surgiu quando os idealizadores perceberam que muitos problemas de segurança, controle de entregas e organização das áreas comuns poderiam ser resolvidos com tecnologia.
+        </p>
+        <p>
+          A partir daí, foi desenvolvido um sistema digital simples, rápido e eficiente, capaz de otimizar a rotina de moradores, porteiros e síndicos, trazendo mais segurança, organização e conforto para todos.
+        </p>
+        <div class="botoes">
+          <a href="#funcionalidades" class="btn-primary">Conhecer Funcionalidades</a>
+        
         </div>
       </div>
     </section>
-
     
-    <section id="servicos" class="secao">
-      <div class="conteudo">
-        <h2>Serviços</h2>
-        <div class="imagem">
-          <img src="img/encomendas.png" alt="Encomendas" />
-          <img src="img/eventos.png" alt="Eventos" />
-          <img src="img/moradores.png" alt="Moradores" />
+ 
+    <section id="funcionalidades" class="secao">
+      <h3>Funcionalidades</h3>
+      <div class="grid-2 cards-grid">
+        <div class="card">
+          <div class="icon-circle"><i data-feather="shield"></i></div>
+          <h3>Controle de Entrada e Saída</h3>
+          <p>Gerencie quem entra e sai do condomínio em tempo real, com relatórios detalhados.</p>
         </div>
-        <div class="texto-lado">
-          <ul>
-            <li>Monitoramento de Sistema</li>
-            <li>Segurança especializada</li>
-            <li>Privacidade de dados</li>
-            <li>Controle de entradas e saídas</li>
-            <li>Sistema de cartões</li>
-            <li>Registro de encomendas</li>
-          </ul>
-          <p>Com o sistema será possível registrar e consultar dados como histórico de entrada e saída de pessoas e veículos, controle de entregas, cadastro detalhado de moradores, visitantes e eventos, permitindo reduzir falhas humanas, agilizar o trabalho da portaria e aumentar o controle sobre quem circula no condomínio.</p>
+        <div class="card">
+          <div class="icon-circle"><i data-feather="user"></i></div>
+          <h3>Cadastro de Moradores e Visitantes</h3>
+          <p>Registre moradores, visitantes e prestadores de serviço com facilidade e segurança.</p>
         </div>
-      </div>
-    </section>
-
-    
-    <section id="historia" class="secao">
-      <div class="conteudo">
-        <h2>História do Projeto</h2>
-        <div class="texto">
-          <p>O ResidentGuard nasceu da necessidade de modernizar a gestão de portarias em condomínios residenciais. A ideia surgiu quando os idealizadores perceberam que muitos problemas de segurança, controle de entregas e organização das áreas comuns poderiam ser resolvidos com tecnologia. A partir daí, foi desenvolvido um sistema digital simples, rápido e eficiente, capaz de otimizar a rotina de moradores, porteiros e síndicos, trazendo mais segurança, organização e conforto para todos.</p>
-          <p>Ao longo do desenvolvimento, foram testadas diversas soluções de cadastro, monitoramento e agendamento, sempre buscando facilitar o uso e garantir a confiabilidade das informações. Hoje, o ResidentGuard se consolida como uma ferramenta completa para a gestão de condomínios, reunindo inovação, praticidade e tecnologia de ponta.</p>
+        <div class="card">
+          <div class="icon-circle"><i data-feather="database"></i></div>
+          <h3>Consulta de Dados</h3>
+          <p>Tenha seus dados sempre salvos e seguros no nosso sistema.</p>
+        </div>
+        <div class="card">
+          <div class="icon-circle"><i data-feather="bell"></i></div>
+          <h3>Notificações em tempo real</h3>
+          <p>Receba notificações em caso de eventos marcados, problemas ou atividades complementares.</p>
         </div>
       </div>
     </section>
 
-   
-    <section id="funcionamento" class="secao">
-      <div class="conteudo">
-        <h2>Tipos de Funcionamento</h2>
-        <div class="funcionamento">
-          <div class="card">
-            <h3>Admin</h3>
-            <p>Gerencia o sistema, usuários, relatórios e permissões.</p>
+  
+    <section id="beneficios" class="secao">
+      <h3>Benefícios</h3>
+      <div class="grid-2 cards-grid">
+        <div class="card">
+          <div class="icon-circle"><i data-feather="shield"></i></div>
+          <h3>Mais Segurança</h3>
+          <p>Evite invasões e mantenha o controle rigoroso do acesso ao seu condomínio.</p>
+        </div>
+        <div class="card">
+          <div class="icon-circle"><i data-feather="zap"></i></div>
+          <h3>Facilidade de Uso</h3>
+          <p>Interface intuitiva que permite rápida adaptação dos porteiros e moradores.</p>
+        </div>
+        <div class="card">
+          <div class="icon-circle"><i data-feather="clock"></i></div>
+          <h3>Economia de Tempo</h3>
+          <p>Automatize processos manuais e otimize a gestão do condomínio.</p>
+        </div>
+        <div class="card">
+          <div class="icon-circle"><i data-feather="headphones"></i></div>
+          <h3>Suporte Especializado</h3>
+          <p>Equipe pronta para ajudar sempre que precisar.</p>
+        </div>
+      </div>
+    </section>
+
+
+ 
+    <section id="sobre" class="secao sobre">
+      <h3>Sobre Nós</h3>
+      <div class="sobre-container">
+        <p>
+          O projeto ResidentGuard surgiu com a ideia de melhorar o sistema de portaria em condomínios e prédios residenciais. Nosso objetivo é desenvolver uma solução tecnológica simples e eficiente, que ajude moradores, visitantes, entregadores, porteiros e síndicos no dia a dia.
+        </p>
+        <p>
+          Com o sistema, será possível controlar quem entra e sai do condomínio, organizar a entrega de encomendas e agendar o uso de áreas comuns, como salão de festas, quadras e churrasqueira, tudo de forma digital, rápida e organizada.
+        </p>
+
+        <div class="grid-2 small-cards-grid">
+          <div class="small-card">
+            <div class="small-icon"><i data-feather="home"></i></div>
+            <div class="small-text">Gestão completa de condomínios</div>
           </div>
-          <div class="card">
-            <h3>Porteiro</h3>
-            <p>Registra entradas, saídas, visitantes e encomendas de forma rápida e segura.</p>
+          <div class="small-card">
+            <div class="small-icon"><i data-feather="users"></i></div>
+            <div class="small-text">Controle de moradores e visitantes</div>
           </div>
-          <div class="card">
-            <h3>Morador</h3>
-            <p>Consulta histórico de entradas, agenda áreas comuns e verifica notificações.</p>
+          <div class="small-card">
+            <div class="small-icon"><i data-feather="box"></i></div>
+            <div class="small-text">Organização de entregas</div>
+          </div>
+          <div class="small-card">
+            <div class="small-icon"><i data-feather="calendar"></i></div>
+            <div class="small-text">Agendamento de áreas comuns</div>
           </div>
         </div>
       </div>
     </section>
 
-   
-    <section id="seguranca" class="secao">
-      <div class="conteudo">
-        <h2>Segurança de Dados</h2>
-        <p>O ResidentGuard utiliza criptografia e controle de acesso para proteger dados de moradores, visitantes e funcionários, garantindo total privacidade e segurança no uso do sistema.</p>
-      </div>
-    </section>
-
-    
-    <section id="telas" class="secao">
-      <div class="conteudo">
-        <h2>Telas do Sistema</h2>
-        <div class="carousel">
-          <img src="img/Login.png" alt="Tela de Login">
-          <img src="img/encomendas.png" alt="Tela de Encomendas">
-          <img src="img/eventos.png" alt="Tela de Eventos">
-          <img src="img/moradores.png" alt="Tela de Moradores">
-        </div>
-        <p>Explore cada tela do sistema e conheça suas funcionalidades: cadastro, controle de acesso, agendamento de áreas comuns e monitoramento de entradas e saídas.</p>
-      </div>
-    </section>
-
-    <!-- SOBRE NÓS -->
-    <section id="sobre" class="secao">
-      <div class="conteudo">
-        <div class="texto">
-          <h2>Sobre Nós</h2>
-          <p>O projeto ResidentGuard surgiu com a ideia de melhorar o sistema de portaria em condomínios e prédios residenciais. Nosso objetivo é desenvolver uma solução tecnológica simples e eficiente, que ajude moradores, visitantes, entregadores, porteiros e síndicos no dia a dia. Com o sistema, será possível controlar quem entra e sai do condomínio, organizar a entrega de encomendas e agendar o uso de áreas comuns, como salão de festas, quadras e churrasqueira, tudo de forma digital, rápida e organizada.</p>
-        </div>
-      </div>
-    </section>
   </main>
+  
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2025 ResidentGuard. Todos os direitos reservados.</p>
+      <div class="social">
+        <a href="https://github.com/" target="_blank" rel="noopener">
+          <i class="fa-brands fa-github"></i> Github
+        </a>
+      </div>
+      <p>Desenvolvido com tecnologia de ponta para revolucionar a gestão de condomínios</p>
+    </div>
+  </footer>
+  
 
-  <script src="script.js"></script>
+ 
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (window.feather) {
+        feather.replace();
+      }
+    });
+
+  
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute("href"));
+        if (target) {
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      });
+    });
+  </script>
+
 </body>
 </html>
